@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+mysqlconnector://root:12345@localhost:5432/book-inventory-python"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+mysqlconnector://root:12345@localhost:3306/book-inventory-python"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
