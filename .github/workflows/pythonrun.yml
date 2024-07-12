@@ -8,6 +8,14 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+            - name: Crear base de datos
+              uses: mirromutth/mysql-action@v1.1
+              with:
+                mysql database: 'book-inventory-python'
+                mysql root password: '12345'
+                mysql user: 'root'
+                mysql password: '12345'
+                
             - name: Hacer checkout del proyecto
               uses: actions/checkout@v4
 
