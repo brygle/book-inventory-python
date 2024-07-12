@@ -22,5 +22,5 @@ jobs:
             - name: Ejecucion de Pruebas
               run: python -m unittest discover -s tests
 
-            - name: Ejecucion de Pruebas
+            - name: Mensaje de exito
               run: echo 'Compilación exitosa'
