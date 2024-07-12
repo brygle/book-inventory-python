@@ -1,4 +1,4 @@
-name: Python construction
+name: Book Inventory Python
 
 on:
     push:
@@ -21,3 +21,6 @@ jobs:
 
             - name: Ejecucion de Pruebas
               run: python -m unittest discover -s tests
+
+            - name: Ejecucion de Pruebas
+              run: echo 'Compilación exitosa'
