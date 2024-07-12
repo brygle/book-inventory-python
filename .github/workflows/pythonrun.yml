@@ -1,5 +1,4 @@
 name: Book Inventory Python
-
 on:
 	push:
 		branches: ["main"]
@@ -9,4 +8,4 @@ jobs:
 		runs-on: ubuntu-latest
 		steps: 
 			- name: Hacer checkout de proyecto
-			  uses: actions/checkout@v4
+				uses: actions/checkout@v4
