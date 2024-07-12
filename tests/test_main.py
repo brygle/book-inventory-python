@@ -7,14 +7,12 @@ def client():
     with app.test_client() as client:
         yield client
 
-
 def test_get_main(client):
     response = client.get('/')
     json_data = response.get_json()
     assert response.status_code == 200
     assert json_data['message'] == 'hola'
-
-"""   
+    
 def test_get_books(client):
     response = client.get('/book')
     json_data = response.get_json()
@@ -201,4 +199,4 @@ def test_restock_book_quantity_negative(client):
     }
     response = client.put('/book/1/sell', data=json.dumps(test_book), headers=headers)
     json_data = response.get_json()
-    assert response.status_code == 405"""
+    assert response.status_code == 405
